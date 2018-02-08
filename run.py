@@ -20,8 +20,6 @@ along with N360 Sample API.  If not, see <http://www.gnu.org/licenses/>.
 
 from eve import Eve
 import os
-from flask_bootstrap import Bootstrap
-from eve_docs import eve_docs
 
 app = Eve()
 
@@ -36,7 +34,4 @@ else:
     debug = True
 
 if __name__ == '__main__':
-	Bootstrap(app)
-	app.register_blueprint(eve_docs, url_prefix='/docs')
-
 	app.run(host=host, port=port, debug=debug)

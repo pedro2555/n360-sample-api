@@ -58,7 +58,7 @@ MONGO_USERNAME = os.environ.get('MONGO_USERNAME', '')
 MONGO_PASSWORD = os.environ.get('MONGO_PASSWORD', '')
 MONGO_DBNAME = os.environ.get('MONGO_DBNAME', 'n360-sample-api')
 
-#X_DOMAINS = '*'
+X_DOMAINS = '*'
 
 # Disable etag concurrency control (for now anyway)
 IF_MATCH = False

@@ -53,7 +53,7 @@ DOMAIN = {
     'exceptions': {
         'item_title': 'exception',
         'resource_methods': ['GET', 'POST'],
-        'item_methods': ['POST'],
+        'item_methods': ['GET'],
         'allow_unknown': True,
         'schema': exceptions_schema   
     }

@@ -36,6 +36,8 @@ employees_schema = {
     }
 }
 
+exceptions_schema = {}
+
 DOMAIN = {
     'employees': {
         'item_title': 'employee',
@@ -47,6 +49,13 @@ DOMAIN = {
         'resource_methods': ['GET', 'POST', 'DELETE'],
         'item_methods': ['GET', 'PUT', 'PATCH', 'DELETE'],
         'schema': employees_schema
+    },
+    'exceptions': {
+        'item_title': 'exception',
+        'resource_methods': ['GET', 'POST'],
+        'item_methods': ['POST'],
+        'allow_unknown': True,
+        'schema': exceptions_schema   
     }
 }
 
